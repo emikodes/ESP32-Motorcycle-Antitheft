@@ -3,7 +3,7 @@ Autore: Emiddio Ingenito
 
 ## Descrizione:
 Il progetto consiste nella realizzazione di un sistema antifurto avanzato per motociclette, basato su ESP32. L’obiettivo è proteggere il veicolo tramite una logica hardware/software completamente integrata, in grado di rilevare intrusioni, bloccare l’accensione e notificare tempestivamente il proprietario.
-<br>
+<br><br>
 Il sistema include:
 
 - Rilevamento movimento tramite accelerometro
