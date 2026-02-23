@@ -69,6 +69,7 @@ void setup() {
 	
 	Serial.println("Numero di telefono memorizzato: " + (phoneNumber != "" ? phoneNumber : String("Nessuno")));
   	Serial.println("TAG memorizzato: " + (masterTag != "" ? masterTag : String("Nessuno")));
+	sendSMS("MOTOGUARD attivo.\nComandi:\nARM - Attiva l'antifurto\nDISARM - Disattiva l'antifurto\nRESET PHONE - Resetta il numero di telefono\nRESET TAG - Resetta il tag RFID\nRESET ALL - Resetta tutti i dati");
 }
 
 void initGSM() {
@@ -185,7 +186,7 @@ void checkIncomingCommands() {
 				phoneNumber = senderNumber;
 				prefs.putString("master_num", phoneNumber);
 				Serial.print("Numero di telefono salvato: " + senderNumber);
-				sendSMS("Nuovo numero salvato.\nComandi:\nARM\nDISARM\nRESET aPHONE\nRESET TAG\nRESET ALL");
+				sendSMS("Numero di telefono registrato. D'ora in poi potrai utilizzare i seguenti comandi per interagire con MOTOGUARD.\nComandi:\nARM - Attiva l'antifurto\nDISARM - Disattiva l'antifurto\nRESET PHONE - Resetta il numero di telefono\nRESET TAG - Resetta il tag RFID\nRESET ALL - Resetta tutti i dati");
 				return; 
 			} 
 			else if (senderNumber != phoneNumber) {
@@ -291,7 +292,7 @@ void checkMotionRaw() {
 void triggerAlarm() {
 	isAlarming = true; 
 	alarmStartTime = millis();
-	digitalWrite(PIN_RELAY_BLOCK, RELAY_ON); 
+	digitalWrite(PIN_RELAY_BLOCK, RELAY_OFF); 
 	
 	digitalWrite(PIN_RELAY_HORN, RELAY_ON);
 	hornState = true;
