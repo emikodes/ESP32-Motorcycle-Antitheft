@@ -32,4 +32,4 @@ Il montaggio è volutamente reso estremamente semplice da effettuare, non invasi
 ---
 Emiddio Ingenito [emikodes-UniMI](https://github.com/emikodes-UniMI) [emikodes](https://github.com/emikodes)
 <br>
-Licenza: GNU General Public License v3.0
+<b>Licenza: GNU General Public License v3.0<b>
