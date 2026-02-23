@@ -27,8 +27,7 @@ Il montaggio è volutamente reso estremamente semplice da effettuare, non invasi
 ---
 
 ### Schematica
-![Schematica Circuito](/images/Schematica_circuito.png)
-
+<img src='./Images/Schematica_circuito.png' width='100%' >
 Licenza: GNU General Public License v3.0
 ---
 Emiddio Ingenito [emikodes-UniMI](https://github.com/emikodes-UniMI) [emikodes](https://github.com/emikodes)
