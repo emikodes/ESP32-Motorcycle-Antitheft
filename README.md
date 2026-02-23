@@ -27,8 +27,7 @@ Il montaggio è volutamente reso estremamente semplice da effettuare, non invasi
 ---
 
 ### Schematica
-
-![Schematica_circuito.png](Schematica_circuito.png)
+![Schematica Circuito](Schematica_circuito.png)
 
 Licenza: GNU General Public License v3.0
 ---
